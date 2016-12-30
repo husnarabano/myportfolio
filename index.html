@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="index2Resume">
+
+<head>
+	<meta charset="UTF-8" />
+	<title> .: HUSNARA BANO :. </title>
+	<!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Phoenixcoded" />
+
+	<!--Favicon-->
+
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+
+	<!-- Required Framework-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- Google font & font-awasome-->
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Josefin+Sans:400,300,600,700' rel='stylesheet'
+		type='text/css'>
+
+	<!--Video pop-up css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+
+	<!-- Style css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Reset css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Responsive css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+
+<body data-ng-controller="MainController">
+	<div id="main_loader">
+		<div id="loader">
+			<div></div>
+		</div>
+	</div>
+
+	<nav class="cd-side-navigation sidebar left" id="myDIV" data-banner>
+		<ul>
+			<li>
+				<a href="index.html" class="selected">
+					<span class="home_icon"></span>
+					<span>Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="resume.html">
+					<span class="resume_icon"></span>
+					<span>Resume</span>
+				</a>
+			</li>
+			<li>
+				<a href="portfolio.html">
+					<span class="portfolio_icon"></span>
+					<span>Portfolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="blog.html">
+					<span class="blog_icon"></span>
+					<span>Blog</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="contact.html">
+					<span class="cont_icon"></span>
+					<span>Contact us</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="sidebar-btn toggle_icon_block" data-action="toggle" data-side="left" data-ng-click="ShowHide()">
+		<div class="toggle_icon {{className}}">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<main class="cd-main">
+		<section class="cd-section index visible">
+			<div class="container home_container">
+				<div class="ptb-60 desktop_padding">
+					<div class="row valign-wrapper">
+						<div class="col-sm-3 home2">
+							<img class="img img-responsive" src="assets/images/home_author2.png" alt="Web Devloper">
+						</div>
+						<div class="col-sm-9 home_author_name home_author_name2">
+							<div class="home_author_details">
+								<h1>Husnara <span class="bolder">Bano</span></h1>
+								<h3>UI Designer / Web Devloper</h3>
+								<h4>
+									<span class="available_icon"></span> On Programming Testing And Everything In Between
+								</h4>
+							</div>
+							<p>
+								I'm Software Developer living in Hyderabad.
+							</p>
+							<p>
+								I love everything that has to do with Web Development, and i truly feel devotion for Client Side Scripting.
+							</p>
+							<p>
+								Why don't we work togather? Please go further to see why i am the one you need to hier.....
+								<br/><br/><a class="btn btn-primary system_btn quick_btn" data-toggle="modal" data-target="#more_details">Quick profile view</a>
+							</p>
+							<div class="row valign-wrapper mb60">
+								<div class="col-sm-6">
+									<div class="home_social_icons">
+										<a href="index2.html#" class="mr5">
+											<span class="g-plus"></span>
+										</a>
+										<a href="index2.html#" class="mr5">
+											<span class="fb"></span>
+										</a>
+										<a href="index2.html#" class="mr5">
+											<span class="twt"></span>
+										</a>
+										<a href="index2.html#" class="mr5">
+											<span class="pinit"></span>
+										</a>
+										<a href="index2.html#">
+											<span class="lin"></span>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="text-right sign_img">
+										<img class="img img-responsive" src="assets/images/Signature.jpg" alt="Signature">
+									</div>
+								</div>
+							</div>
+							<div class="row text-center mb60">
+								<div class="col-sm-6 col-md-3 col-xs-12 mob_chart2">
+									<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent || current }}%</div>
+									<div class="add_round" data-round>
+										<div data-round-progress data-max="max" data-current="current" data-color="#dd0031" data-radius="70" data-bgcolor="#ffffff"
+											data-semi="isSemi" data-stroke="3" data-rounded="false" data-clockwise="true" data-responsive="false" data-duration="1000"
+											data-animation="easeInOutQuart" data-animation-delay="300" data-on-render="showPreciseCurrent">
+
+										</div>
+									</div>
+									<div class="text-center mob_counter">
+										<h5>Angular 2.0</h5>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3 col-xs-12 mob_chart2">
+									<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent1 || current1 }}%</div>
+									<div class="add_round" data-round>
+										<div data-round-progress data-max="max" data-current="current1" data-color="#0487cc" data-radius="70" data-bgcolor="#ffffff"
+											data-semi="isSemi" data-stroke="3" data-rounded="false" data-clockwise="true" data-responsive="false" data-duration="1000"
+											data-animation="easeInOutQuart" data-animation-delay="600" data-on-render="showPreciseCurrent1" data-round>
+
+										</div>
+									</div>
+									<div class="text-center mob_counter">
+										<h5>Type Script</h5>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3 col-xs-12 mob_chart2">
+									<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent2 || current2 }}%</div>
+									<div class="add_round" data-round>
+										<div data-round-progress data-max="max" data-current="current2" data-color="#f7df1e" data-radius="70" data-bgcolor="#ffffff"
+											data-semi="isSemi" data-stroke="3" data-rounded="false" data-clockwise="true" data-responsive="false" data-duration="1000"
+											data-animation="easeInOutQuart" data-animation-delay="900" data-on-render="showPreciseCurrent2" data-round>
+
+										</div>
+									</div>
+									<div class="text-center">
+										<h5>Java Script OOP </h5>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3 col-xs-12 mob_chart2">
+									<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent3 || current3 }}%</div>
+									<div class="add_round" data-round>
+										<div data-round-progress data-max="max" data-current="current3" data-color="#563d7c" data-radius="70" data-bgcolor="#ffffff"
+											data-semi="isSemi" data-stroke="3" data-rounded="false" data-clockwise="true" data-responsive="false" data-duration="1000"
+											data-animation="easeInOutQuart" data-animation-delay="1200" data-on-render="showPreciseCurrent3" data-round>
+
+										</div>
+									</div>
+									<div class="text-center">
+										<h5>Bootstrap 4</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="container">
+						<h2>Bio <span class="bolder">info</span></h2>
+						<p class="mb40">
+							Assertively cultivate professional interfaces without synergistic etworks. Quickly erage existing customized ideas through
+							client-based eliverables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize
+							client-centric tals rather than focused web-readiness. Intrinsicly monetize reliable interfaces rather than multimedia
+							based experiences. synergistic networks. Quickly rather than multimedia based Collaboratively synergize economically
+							sound process improvements with functionalized e-commerce.
+						</p>
+
+						<div class="row valign-wrapper mb40">
+							<div class="col-sm-5 author_bio_img">
+								<img class="img img-responsive" src="assets/images/home_author_bio2.jpg" alt="Web Devloper">
+							</div>
+							<div class="col-sm-7">
+								<div class="scroll_page_table">
+									<table class="table table-responsive">
+										<tbody>
+											<tr>
+												<th class="pb40">Name</th>
+												<th class="pb40">:</th>
+												<td class="pb40">Husnara Bano</td>
+											</tr>
+											<tr>
+												<th class="pb40">Date Of Birth</th>
+												<th class="pb40">:</th>
+												<td class="pb40">28/09/1992</td>
+											</tr>
+											<tr>
+												<th class="pb40">Email</th>
+												<th class="pb40">:</th>
+												<td class="pb40"><a href="husnarabano7@gmail.com" target="_top">husnarabano7@gmail.com</a></td>
+											</tr>
+											<tr>
+												<th class="pb40">Address</th>
+												<th class="pb40">:</th>
+												<td class="pb40"> Hitech City, Hyderabad - 500081</td>
+											</tr>
+											<tr>
+												<th class="pb40">Phone</th>
+												<th class="pb40">:</th>
+												<td class="pb40">9666570598</td>
+											</tr>
+											<tr>
+												<th>Website</th>
+												<th>:</th>
+												<td><a href="http://www.phoenixcoded.com" target="_blank">www.phoenixcoded.com</a></td>
+											</tr>
+											<tr>
+												<th>Envato</th>
+												<th>:</th>
+												<td><a href="https://themeforest.net/user/phoenixcoded" target="_blank">https://themeforest.net/user/phoenixcoded</a></td>
+											</tr>
+											<tr>
+												<th>Skype</th>
+												<th>:</th>
+												<td>Phoenixcoded</td>
+											</tr>
+											<tr>
+												<th>Twitter</th>
+												<th>:</th>
+												<td><a href="https://twitter.com/phoenixcoded" target="_blank">@Phoenixcoded</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<h2>Services <span class="bolder">offered</span></h2>
+
+						<div class="row mb40">
+							<div class="offered_services">
+								<div class="col-md-4 text-center services_responsive">
+									<div class="offered_services_icon">
+										<span class="gamepad_icon"></span>
+									</div>
+									<h3 class="mtb20 system_font_color">Game Development</h3>
+									<p>
+										A few months ago, we found ridiculously cheap pl ane tickets was our first visit to the city and, believe it or not, Stockholm
+										in February was more pleasant than Boston in March.
+									</p>
+								</div>
+								<div class="col-md-4 text-center services_responsive">
+									<div class="offered_services_icon">
+										<span class="management_icon"></span>
+									</div>
+									<h3 class="mtb20 system_font_color">Management</h3>
+									<p>
+										A few months ago, we found ridiculously cheap pl ane tickets was our first visit to the city and, believe it or not, Stockholm
+										in February was more pleasant than Boston in March.
+									</p>
+								</div>
+								<div class="col-md-4 text-center services_responsive">
+									<div class="offered_services_icon">
+										<span class="designing_icon"></span>
+									</div>
+									<h3 class="mtb20 system_font_color">Designing</h3>
+									<p>
+										A few months ago, we found ridiculously cheap pl ane tickets was our first visit to the city and, believe it or not, Stockholm
+										in February was more pleasant than Boston in March.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<h2>Who <span class="bolder">am i ?</span></h2>
+						<div class="row">
+							<p class="mb40 col-md-10 col-md-offset-1 text-center">Assertively cultivate professional interfaces without synergistic etworks. Quickly erage existing customized ideas
+								through client-based eliverables</p>
+							<div class="col-sm-12 video-img-block mb20">
+								<img class="img img-responsive" src="assets/images/video-bg1.jpg" alt="Video Background" />
+								<div class="video-play-icon">
+									<a class="video video_modal" title="Video Presentation" href="https://player.vimeo.com/video/61373732?color=ff0179&amp;title=0&amp;byline=0&amp;portrait=0">
+										<span class="play_icon"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="text-center">
+							<button type="button" class="btn system_btn mr25">Hire Me Now</button>
+							<button type="button" class="btn system_btn">Download CV</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-left">
+							<h6> Design by <a href="" target="_blank">Husnara Bano</a> </h6>
+						</div>
+						<div class="col-sm-6 text-right">
+							<h6> Copyright &copy; <span id="copyright-year">2016</span>. All rights reserved </h6>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</main>
+	<div class="modal fade" id="more_details">
+		<div class="modal-dialog modal-lg">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">Quick profile view</h3>
+				</div>
+				<div class="modal-body profile_modal_body">
+					<div class="row">
+						<div class="modal_details">
+							<ul class="modal_profile mb40">
+								<li>
+									<img class="profile_pic img img-responsive" src="assets/images/modal_profile2.png" alt="modal profile">
+									<div>
+										<h3>Husnara Bano</h3>
+										<h4>
+											<span class="available_icon"></span>On Programming Testing And Everything In Between
+										</h4>
+										<p>Expert project manager with php, codeigniter, PSD-to-html, Grouping</p>
+										<p class="modal_location mb20"><img class="img img-responsive" src="assets/images/location.png" alt="location">Hyderabad,India.</p>
+										<div class="modal_profile_tag">
+											<span>PHP</span>
+											<span>Codeigniter</span>
+											<span>psd to html</span>
+											<span>AJAX</span>
+											<span>Jquery</span>
+										</div>
+									</div>
+
+								</li>
+							</ul>
+							<hr />
+						</div>
+					</div>
+					<div class="row">
+						<div class="modal_profile_bottom">
+							<div class="col-sm-6">
+								<div class="mb40">
+									<h6 class="system_font_color">Work History</h6>
+									<h5>100 Jobs, 2000 Hours of Coding </h5>
+								</div>
+								<div class="mb40">
+									<h6 class="system_font_color">Availability</h6>
+									<h5>30 hours/week full time</h5>
+								</div>
+
+								<div class="mb40">
+									<h6 class="system_font_color">Week Availability</h6>
+									<div class="availability_tags">
+										<span title="Sunday">S</span>
+										<span title="Monday">M</span>
+										<span title="Tuesday">T</span>
+										<span title="Wednesday">W</span>
+										<span title="Thursday">T</span>
+										<span title="Friday">F</span>
+										<span title="Saturday">S</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="mb40">
+									<h6 class="system_font_color">Language</h6>
+									<h5>English, Gujarati, Hindi</h5>
+								</div>
+								<div class="mb30">
+									<h6 class="system_font_color">Check out my freelancing profiles</h6>
+									<div class="freelance_acc_img">
+										<img class="img img-responsive" src="assets/images/freenlance_profile1.png" alt="freelance">
+										<img class="img img-responsive" src="assets/images/freenlance_profile2.png" alt="freelance">
+										<img class="img img-responsive" src="assets/images/freenlance_profile3.png" alt="freelance">
+									</div>
+								</div>
+								<div class="mb40">
+									<h6 class="system_font_color">Join us on</h6>
+									<div class="home_social_icons">
+										<a href="index2.html#" class="mr5">
+											<span class="g-plus"></span>
+										</a>
+										<a href="index2.html#" class="mr5">
+											<span class="fb"></span>
+										</a>
+										<a href="index2.html#" class="mr5">
+											<span class="twt"></span>
+										</a>
+										<a href="index2.html#" class="mr5">
+											<span class="pinit"></span>
+										</a>
+										<a href="index2.html#">
+											<span class="lin"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Warning Section Starts -->
+	<!-- Older IE warning message -->
+	<!--[if lt IE 9]>
+<div class="ie-warning">
+	<h1>Warning!!</h1>
+	<p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+	<div class="iew-container">
+		<ul class="iew-download">
+			<li>
+				<a href="http://www.google.com/chrome/">
+					<img src="assets/images/browser/chrome.png" alt="">
+					<div>Chrome</div>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.mozilla.org/en-US/firefox/new/">
+					<img src="assets/images/browser/firefox.png" alt="">
+					<div>Firefox</div>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.opera.com">
+					<img src="assets/images/browser/opera.png" alt="">
+					<div>Opera</div>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.apple.com/safari/">
+					<img src="assets/images/browser/safari.png" alt="">
+					<div>Safari</div>
+				</a>
+			</li>
+			<li>
+				<a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+					<img src="assets/images/browser/ie.png" alt="">
+					<div>IE (9 & above)</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+	<!-- Warning Section Ends -->
+
+	<!-- Required js -->
+	<script src="assets/js/jquery.2.2.3.min.js"></script>
+	<script src="assets/js/jquery.easing.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Mobile Sidebar menu js  -->
+	<script src="assets/js/jquery.sidebar.min.js"></script>
+
+	<!--AngularJs script start-->
+
+	<script src="assets/angularJS/angular.min.js"></script>
+
+	<!--Module script-->
+	<script src="assets/modules/index2module.js"></script>
+
+	<!--controller script-->
+	<script src="assets/controllers/controller.js"></script>
+
+	<!--roundProgress script-->
+	<script src="assets/angularJS/roundProgress.js"></script>
+
+	<!--AngularJs script end-->
+
+	<!-- Video pop-up js -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+
+</body>
+
+</html>

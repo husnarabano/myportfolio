@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="blog">
+<head>
+	<meta charset="UTF-8"/>
+	<title>.: HUSNARA BANO :. </title>
+	<!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Phoenixcoded" />
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+	<!-- Required Framework-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- Google font & font-awasome-->
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Josefin+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- Style css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Reset css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Responsive css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body data-ng-controller="BlogController">
+<div id="main_loader">
+	<div id="loader">
+		<div></div>
+	</div>
+</div>
+<nav class="cd-side-navigation sidebar left" id="myDIV" data-banner>
+	<ul>
+		<li>
+			<a href="index.html">
+				<span class="home_icon"></span>
+				<span>Home</span>
+			</a>
+		</li>
+		<li>
+			<a href="resume.html">
+				<span class="resume_icon"></span>
+				<span>Resume</span>
+			</a>
+		</li>
+		<li>
+			<a href="portfolio.html">
+				<span class="portfolio_icon"></span>
+				<span>Portfolio</span>
+			</a>
+		</li>
+		<li>
+			<a href="blog.html" class="selected">
+				<span class="blog_icon"></span>
+				<span>Blog</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="contact.html">
+				<span class="cont_icon"></span>
+				<span>Contact us</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+<div class="sidebar-btn toggle_icon_block" data-action="toggle" data-side="left" data-ng-click="ShowHide()">
+	<div class="toggle_icon {{className}}">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+<main class="cd-main">
+	<section class="cd-section blog visible">
+		<div class="container">
+			<div class="ptb-60" id="show_ID">
+
+				<h1 class="title">My <span class="bolder">Blog</span></h1>
+				<p class="mb40">
+				Every successful blog, movement and idea has a real and personal story behind it. A reason why, that a community can rally behind.	
+				</p>
+
+
+				<div class="valign-wrapper blog_block">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="blog_img">
+								<img class="img img-responsive" src="assets/images/blog1.jpg" alt="Blogs">
+								<div class="blog_date">
+									<h5>30 April, 2016</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<a href="blog_details.html">
+								<h4 class="system_font_color text-uppercase">No one should ever have left the oceans</h4>
+							</a>
+							<div class="blog_person">
+								<h5>
+									<a href="blog.html#" target="_blank">
+										<span class="user_icon"></span>John Doe
+									</a>
+								</h5>
+								<h5>
+									<a href="http://localhost/resume/resume/blog_details.html#reply" target="_blank">
+										<span class="blog_coment"></span>65 comments
+									</a>
+								</h5>
+								<h5>
+									<span class="blog_share"></span>Share
+								</h5>
+							</div>
+							<div class="mb40">
+								<p>
+									Assertively cultivate professional interfaces without synergistic etwor s.Quickly erage existing customized ideas through client- based eliver ables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize client-centric tals rather than focused web-readiness..
+								</p>
+							</div>
+							<div class="mob_center">
+								<a href="blog_details.html" class="btn system_btn text-uppercase" data-menu="blog_details">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="valign-wrapper blog_block">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<div class="blog_img">
+								<img class="img img-responsive" src="assets/images/blog2.jpg" alt="Blogs" >
+								<div class="blog_date">
+									<h5>3 June, 2016</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-md-pull-6">
+							<a href="blog_details.html">
+								<h4 class="system_font_color text-uppercase">No one should ever have left the oceans</h4>
+							</a>
+							<div class="blog_person">
+								<h5>
+									<a href="blog.html#" target="_blank">
+										<span class="user_icon"></span>John Doe
+									</a>
+								</h5>
+								<h5>
+									<a href="http://localhost/resume/resume/blog_details.html#reply" target="_blank">
+										<span class="blog_coment"></span>85 comments
+									</a>
+								</h5>
+								<h5>
+									<span class="blog_share"></span>Share
+								</h5>
+							</div>
+							<div class="mb40">
+								<p>
+									Assertively cultivate professional interfaces without synergistic etwor s.Quickly erage existing customized ideas through client- based eliver ables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize client-centric tals rather than focused web-readiness..
+								</p>
+							</div>
+							<div class="mob_center">
+								<a href="blog_details.html" class="btn system_btn text-uppercase">Read More</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="valign-wrapper blog_block">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="blog_img">
+								<img class="img img-responsive" src="assets/images/blog3.jpg" alt="Blogs">
+								<div class="blog_date">
+									<h5>4 July, 2016</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<a href="blog_details.html">
+								<h4 class="system_font_color text-uppercase">No one should ever have left the oceans</h4>
+							</a>
+							<div class="blog_person">
+								<h5>
+									<a href="blog.html#" target="_blank">
+										<span class="user_icon"></span>John Doe
+									</a>
+								</h5>
+								<h5>
+									<a href="http://localhost/resume/resume/blog_details.html#reply" target="_blank">
+										<span class="blog_coment"></span>62 comments
+									</a>
+								</h5>
+								<h5>
+									<span class="blog_share"></span>Share
+								</h5>
+							</div>
+							<div class="mb40">
+								<p>
+									Assertively cultivate professional interfaces without synergistic etwor s.Quickly erage existing customized ideas through client- based eliver ables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize client-centric tals rather than focused web-readiness..
+								</p>
+							</div>
+							<div class="mob_center">
+								<a href="blog_details.html" class="btn system_btn text-uppercase">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="mob_hide_block" class="let_show valign-wrapper blog_block" style="display:none;">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<div class="blog_img">
+								<img class="img img-responsive" src="assets/images/blog4.jpg" alt="Blogs">
+								<div class="blog_date">
+									<h5>30 August, 2016</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-md-pull-6">
+							<a href="blog_details.html">
+								<h4 class="system_font_color text-uppercase">No one should ever have left the oceans</h4>
+							</a>
+							<div class="blog_person">
+								<h5>
+									<a href="blog.html#" target="_blank">
+										<span class="user_icon"></span>John Doe
+									</a>
+								</h5>
+								<h5>
+									<a href="http://localhost/resume/resume/blog_details.html#reply" target="_blank">
+										<span class="blog_coment"></span>62 comments
+									</a>
+								</h5>
+								<h5>
+									<span class="blog_share"></span>Share
+								</h5>
+							</div>
+							<div class="mb40">
+								<p>
+									Assertively cultivate professional interfaces without synergistic etwor s.Quickly erage existing customized ideas through client- based eliver ables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize client-centric tals rather than focused web-readiness..
+								</p>
+							</div>
+							<div class="mob_center">
+								<a href="blog_details.html" class="btn system_btn text-uppercase">Read More</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="let_show valign-wrapper blog_block" style="display:none;">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="blog_img">
+								<img class="img img-responsive" src="assets/images/blog5.jpg" alt="Blogs">
+								<div class="blog_date">
+									<h5>15 August, 2016</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<a href="blog_details.html">
+								<h4 class="system_font_color text-uppercase">No one should ever have left the oceans</h4>
+							</a>
+							<div class="blog_person">
+								<h5>
+									<a href="blog.html#" target="_blank">
+										<span class="user_icon"></span>John Doe
+									</a>
+								</h5>
+								<h5>
+									<a href="http://localhost/resume/resume/blog_details.html#reply" target="_blank">
+										<span class="blog_coment"></span>62 comments
+									</a>
+								</h5>
+								<h5>
+									<span class="blog_share"></span>Share
+								</h5>
+							</div>
+							<div class="mb40">
+								<p>
+									Assertively cultivate professional interfaces without synergistic etwor s.Quickly erage existing customized ideas through client- based eliver ables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize client-centric tals rather than focused web-readiness..
+								</p>
+							</div>
+							<div class="mob_center">
+								<a href="blog_details.html" class="btn system_btn text-uppercase">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<a id="loadMore" class="btn system_btn" data-ng-click="showMoreItems()">Show More Blogs</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 text-left">
+							<h6> Design by <a href="" target="_blank">Husnara Bano</a> </h6>
+					</div>
+					<div class="col-sm-6 text-right">
+						<h6> Copyright &copy; <span id="copyright-year">2016</span>. All rights reserved </h6>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+</main>
+
+<!-- Warning Section Starts -->
+<!-- Older IE warning message -->
+<!--[if lt IE 9]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="assets/images/browser/chrome.png" alt="">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="assets/images/browser/firefox.png" alt="">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="assets/images/browser/opera.png" alt="">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="assets/images/browser/safari.png" alt="">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>  -->
+<!--[endif]-->
+<!-- Warning Section Ends -->
+
+<!-- Required js -->
+<script src="assets/js/jquery.2.2.3.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Mobile Sidebar menu js  -->
+<script src="assets/js/jquery.sidebar.min.js"></script>
+
+<!--AngularJs script start-->
+<script src="assets/angularJS/angular.min.js"></script>
+
+<!--Module script-->
+<script src="assets/modules/BlogModule.js"></script>
+
+<!--controller script-->
+<script src="assets/controllers/BlogController.js"></script>
+
+<!--AngularJs script end-->
+
+</body>
+</html>

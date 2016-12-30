@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="portfolioDetail">
+<head>
+	<meta charset="UTF-8"/>
+	<title>.: HUSNARA BANO :. </title>
+	<!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Phoenixcoded" />
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+	<!-- Required Framework-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- Google font & font-awasome-->
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Josefin+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<!--slick-carousel css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-carousel/slick.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-carousel/slick-theme.css">
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Reset css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Responsive css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body data-ng-controller="PortfolioController">
+<div id="main_loader">
+	<div id="loader">
+		<div></div>
+	</div>
+</div>
+
+<nav class="cd-side-navigation sidebar left" id="myDIV" data-banner>
+	<ul>
+		<li>
+			<a href="index.html">
+				<span class="home_icon"></span>
+				<span>Home</span>
+			</a>
+		</li>
+		<li>
+			<a href="resume.html">
+				<span class="resume_icon"></span>
+				<span>Resume</span>
+			</a>
+		</li>
+		<li>
+			<a href="portfolio.html" class="selected">
+				<span class="portfolio_icon"></span>
+				<span>Portfolio</span>
+			</a>
+		</li>
+		<li>
+			<a href="blog.html">
+				<span class="blog_icon"></span>
+				<span>Blog</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="contact.html">
+				<span class="cont_icon"></span>
+				<span>Contact us</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+<div class="sidebar-btn toggle_icon_block" data-action="toggle" data-ng-click="ShowHide()">
+	<div class="toggle_icon {{className}}">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+<main class="cd-main">
+	<section class="cd-section port_details visible">
+		<div class="container">
+			<div class="ptb-60">
+
+				<h1>Inventory <span class="bolder">System</span></h1>
+				<h3>Web Based Fully Cloud System</h3>
+
+				<div class="row">
+					<div class="col-sm-4 col-sm-push-8">
+						<div class="input-group search_btn">
+							<input type="text" class="form-control" placeholder="Search for...">
+							<span class="input-group-btn">
+											<button class="btn btn-secondary" type="button">
+												<i class="fa fa-search"></i>
+											</button>
+										</span>
+						</div>
+						<div class="port_detail_next_search">
+							<h4 class="system_font_color mtb-40">Categories</h4>
+							<h5>
+								<a href="portfolio_details.html#" target="_blank">
+									Web Design
+									<i class="fa fa-angle-right pull-right"></i>
+								</a>
+							</h5>
+							<h5>
+								<a href="portfolio_details.html#" target="_blank">
+									Illustration
+									<i class="fa fa-angle-right pull-right"></i>
+								</a>
+							</h5>
+							<h5>
+								<a href="portfolio_details.html#" target="_blank">
+									Photoshop
+									<i class="fa fa-angle-right pull-right"></i>
+								</a>
+							</h5>
+							<h5>
+								<a href="portfolio_details.html#" target="_blank">
+									Application
+									<i class="fa fa-angle-right pull-right"></i>
+								</a>
+							</h5>
+						</div>
+						<div>
+							<h4 class="system_font_color mtb-40">Recent Posts</h4>
+							<div class="row recent_post">
+								<a href="portfolio_details.html#" target="_blank">
+									<div class="col-sm-4">
+										<img class="img img-responsive" src="assets/images/post1.jpg" alt="Post">
+									</div>
+									<div class="col-sm-8">
+										<h5>Standard gallery post</h5>
+										<h5>15 aug, 2016</h5>
+									</div>
+								</a>
+							</div>
+							<div class="row recent_post">
+								<a href="portfolio_details.html#" target="_blank">
+									<div class="col-sm-4 ">
+										<img class="img img-responsive" src="assets/images/post2.jpg" alt="Post">
+									</div>
+									<div class="col-sm-8">
+										<h5>Classic gallery post</h5>
+										<h5>24 sept, 2016</h5>
+									</div>
+								</a>
+							</div>
+							<div class="row recent_post">
+								<a href="portfolio_details.html#" target="_blank">
+									<div class="col-sm-4">
+										<img class="img img-responsive" src="assets/images/post3.jpg" alt="Post">
+									</div>
+									<div class="col-sm-8">
+										<h5>Creative gallery post</h5>
+										<h5>27 sept, 2016</h5>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="port_tags">
+							<h4 class="system_font_color mtb-40">Tags</h4>
+							<a href="portfolio_details.html#" class="btn system_btn">Coading</a>
+							<a href="portfolio_details.html#" class="btn system_btn">Inventory System</a>
+							<a href="portfolio_details.html#" class="btn system_btn">Designing</a>
+							<a href="portfolio_details.html#" class="btn system_btn">Java</a>
+							<a href="portfolio_details.html#" class="btn system_btn">Bootstrap</a>
+						</div>
+					</div>
+					<div class="col-sm-8 col-sm-pull-4">
+						<span class="protfolio_date mb20">FEBRUARY,2016</span>
+
+						<div class="port_details_all_img">
+							<div class="row">
+								<div class="col-sm-12">
+									<div data-slick id="big_banner" class="slider single-item" data-slides-to-show=1 data-slides-to-scroll=1 data-arrows=false data-fade=true data-autoplay=true data-autoplay-speed=2000 data-as-nav-for="#small_banner"  >
+										<div class="port_big_img">
+											<img class="img img-responsive mt20" src="assets/images/portfolio/portfolio_big1.jpg" alt="Big_ Details">
+											<div class="port_detail_title">Sales Management Module</div>
+										</div>
+										<div class="port_big_img">
+											<img class="img img-responsive mt20" src="assets/images/portfolio/portfolio_big2.jpg" alt="Big_ Details">
+											<div class="port_detail_title">Sales Management-1 Module</div>
+										</div>
+										<div class="port_big_img">
+											<img class="img img-responsive mt20" src="assets/images/portfolio/portfolio_big3.jpg" alt="Big_ Details">
+											<div class="port_detail_title">Sales Management Module</div>
+										</div>
+										<div class="port_big_img">
+											<img class="img img-responsive mt20" src="assets/images/portfolio/portfolio_big4.jpg" alt="Big_ Details">
+											<div class="port_detail_title">Sales Management Module</div>
+										</div>
+										<div class="port_big_img">
+											<img class="img img-responsive mt20" src="assets/images/portfolio/portfolio_big5.jpg" alt="Big_ Details">
+											<div class="port_detail_title">Sales Management Module</div>
+										</div>
+										<div class="port_big_img">
+											<img class="img img-responsive mt20" src="assets/images/portfolio/portfolio_big6.jpg" alt="Big_ Details">
+											<div class="port_detail_title">Sales Management Module</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row mt20">
+								<div class="col-sm-12">
+									<div data-slick id="small_banner" class="slider single-item" data-slides-to-show=4 data-slides-to-scroll=1 data-as-nav-for="#big_banner" data-dots=false data-center-mode=true data-autoplay=true data-arrows=true data-autoplay-speed=2000 data-focus-on-select=true  >
+										<div>
+											<img class="img img-responsive" src="assets/images/portfolio/portfolio_small1.jpg" alt="small-details" >
+										</div>
+										<div>
+											<img class="img img-responsive" src="assets/images/portfolio/portfolio_small2.jpg" alt="small-details" >
+										</div>
+										<div>
+											<img class="img img-responsive" src="assets/images/portfolio/portfolio_small3.jpg" alt="small-details" >
+										</div>
+										<div>
+											<img class="img img-responsive" src="assets/images/portfolio/portfolio_small4.jpg" alt="small-details" >
+										</div>
+										<div>
+											<img class="img img-responsive" src="assets/images/portfolio/portfolio_small5.jpg" alt="small-details" >
+										</div>
+										<div>
+											<img class="img img-responsive" src="assets/images/portfolio/portfolio_small6.jpg" alt="small-details" >
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<p class="mb40">
+									A few months ago, we found ridiculously cheap plane tickets for Boston and off we went. It was our first visit to the city and, believe it or not, Stockholm in February was more pleasant than Boston in March. It probably has a lot to do with the fact that we arrived completely unprepard. That It was so cold that I wouldn't even reach for my camera. I snapped more pictures...  <a href="portfolio_details.html#">more</a>
+								</p>
+							</div>
+							<div class="mb40 col-sm-12 col-md-8">
+											<span class="port_detail_url">
+												URL :
+												<input data-ng-model="textToCopy" >
+												<a class="lets_copy" data-clipboard data-supported="supported" data-text="textToCopy" data-on-copied="success()" data-on-error="fail(err)">Copy Link</a>
+											</span>
+							</div>
+							<div class="port_social_icon col-sm-12 col-md-4">
+								<a href="portfolio_details.html#">
+									<img class="img img-responsive" src="assets/images/tweet.png" alt="Tweet">
+								</a>
+								<a href="portfolio_details.html#">
+									<img class="img img-responsive" src="assets/images/fb_like.png" alt="FB">
+								</a>
+								<a href="portfolio_details.html#">
+									<img class="img img-responsive" src="assets/images/pinit.png" alt="Pinit">
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								<h3>Portfolio Source</h3>
+								<ul class="port_source pl20">
+									<li><h4>Parallax Effect</h4></li>
+									<li><h4>Bootstrap 3</h4></li>
+									<li><h4>MailChimp</h4></li>
+									<li><h4>PHP mail</h4></li>
+									<li><h4>Html 5</h4></li>
+								</ul>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<h3>Technology Used</h3>
+								<ul class="pl0">
+									<li class="port_tech_item">
+										<div class="divider">
+											<span class="port_icon1"></span>
+											<h4>Parallax Effect</h4>
+											<p>Give extra smooth effect to your web page</p>
+										</div>
+									</li>
+									<li class="port_tech_item">
+										<div class="divider">
+											<span class="port_icon2"></span>
+											<h4>Front - End Development</h4>
+											<p>Give extra smooth effect to your web page</p>
+										</div>
+									</li>
+									<li class="port_tech_item">
+										<div class="divider">
+											<span class="port_icon3"></span>
+											<h4>Responsive  Design</h4>
+											<p>Give extra smooth effect to your web page</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+						<div id="port_chart" class="text-center mb40">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3 class="text-left">Time Duration</h3>
+									<div class="row text-center mb15" >
+										<div class="col-sm-6 col-md-4 col-xs-12 mb15 mob_chart" >
+											<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent || current }}Days</div>
+											<div data-round-progress
+												 data-max="max"
+												 data-current="current"
+												 data-color="#0487cc"
+												 data-radius="70"
+												 data-bgcolor="#ffffff"
+												 data-semi="isSemi"
+												 data-stroke="3"
+												 data-rounded="false"
+												 data-clockwise="true"
+												 data-responsive="false"
+												 data-duration="1000"
+												 data-animation="easeInOutQuart"
+												 data-animation-delay="0"
+												 data-on-render="showPreciseCurrent">
+
+											</div>
+											<div class="text-center">
+												<h5 class="mb20">Communication Skill</h5>
+												<p>A few months ago, we found ridiculously cheap plane </p>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-4 col-xs-12 mb15 mob_chart" >
+											<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent1 || current1 }}%</div>
+											<div data-round-progress
+												 data-max="max"
+												 data-current="current1"
+												 data-color="#0487cc"
+												 data-radius="70"
+												 data-bgcolor="#ffffff"
+												 data-semi="isSemi"
+												 data-stroke="3"
+												 data-rounded="false"
+												 data-clockwise="true"
+												 data-responsive="false"
+												 data-duration="1000"
+												 data-animation="easeInOutQuart"
+												 data-animation-delay="0"
+												 data-n-render="showPreciseCurrent1">
+
+											</div>
+											<div class="text-center">
+												<h5 class="mb20">English</h5>
+												<p>A few months ago, we found ridiculously cheap plane </p>
+											</div>
+										</div>
+										<div class="col-sm-6 col-md-4 col-xs-12 mob_chart" >
+											<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent2 || current2 }}%</div>
+											<div data-round-progress
+												 data-max="max"
+												 data-current="current2"
+												 data-color="#0487cc"
+												 data-radius="70"
+												 data-bgcolor="#ffffff"
+												 data-semi="isSemi"
+												 data-stroke="3"
+												 data-rounded="false"
+												 data-clockwise="true"
+												 data-responsive="false"
+												 data-duration="1000"
+												 data-animation="easeInOutQuart"
+												 data-animation-delay="0"
+												 data-on-render="showPreciseCurrent2">
+
+											</div>
+											<div class="text-center">
+												<h5 class="mb20">Creative</h5>
+												<p>A few months ago, we found ridiculously cheap plane </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<h3>Client Review</h3>
+								<div data-slick id="review" class="slider single-item" data-slides-to-show=1 data-slides-to-scroll=1 data-autoplay=true draggable=true data-fade=true data-arrows=false data-dots=true  >
+									<div>
+										<blockquote>
+											<p>"Sit ametctetur adipising elit, sed do eiusmod tempor incididint ut labore magna aliuua. Ut enim ad minim veniam, quis nosturd exercitation u, lamco laboris nisi ut aliquip "</p>
+
+										</blockquote>
+										<div class="text-center mt20 mb20">
+											<h5 class="text-uppercase system_font_color">Grenchen Pearce</h5>
+											<h6>Boston Brothers co.</h6>
+											<span class="system_span">4th July 2016</span>
+										</div>
+									</div>
+									<div>
+										<blockquote>
+											<p>
+												"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+											</p>
+										</blockquote>
+										<div class="text-center mt20 mb20">
+											<h5 class="text-uppercase system_font_color">John Doe</h5>
+											<h6>New Investers</h6>
+											<span class="system_span">6th June 2016</span>
+										</div>
+									</div>
+									<div>
+										<blockquote>
+											<p>" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout "</p>
+
+										</blockquote>
+										<div class="text-center mt20 mb20">
+											<h5 class="text-uppercase system_font_color">Mark Jaison</h5>
+											<h6>Boston Brothers co.</h6>
+											<span class="system_span">10th August 2016</span>
+										</div>
+									</div>
+									<div>
+										<blockquote>
+											<p>" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour "</p>
+
+										</blockquote>
+										<div class="text-center mt20 mb20">
+											<h5 class="text-uppercase system_font_color">Grahen Doe</h5>
+											<h6>Boston Brothers co.</h6>
+											<span class="system_span">29th August 2016</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 text-left">
+							<h6> Design by <a href="" target="_blank">Husnara Bano</a> </h6>
+					</div>
+					<div class="col-sm-6 text-right">
+						<h6> Copyright &copy; <span id="copyright-year">2016</span>. All rights reserved </h6>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+</main>
+
+<!-- Warning Section Starts -->
+<!-- Older IE warning message -->
+<!--[if lt IE 9]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="assets/images/browser/chrome.png" alt="">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="assets/images/browser/firefox.png" alt="">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="assets/images/browser/opera.png" alt="">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="assets/images/browser/safari.png" alt="">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>  -->
+<!-- [endif]-->
+<!-- Warning Section Ends -->
+
+<!-- Required js -->
+<script src="assets/js/jquery.2.2.3.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Mobile Sidebar menu js  -->
+<script src="assets/js/jquery.sidebar.min.js"></script>
+
+<!--AngularJs script start-->
+
+<script src="assets/angularJS/angular.min.js"></script>
+
+<!--Module script-->
+<script src="assets/modules/PortfolioDetailModule.js"></script>
+
+<!--controller script-->
+<script src="assets/controllers/PortfolioController.js"></script>
+
+<!--roundProgress script-->
+<script src="assets/angularJS/roundProgressScroll.js"></script>
+
+<!--Slick js-->
+<script src="assets/angularJS/slick-carousel/slick.js"></script>
+<script src="assets/angularJS/slick.js"></script>
+
+<!--angular-clipboard.js-->
+<script src="assets/angularJS/angular-clipboard.js"></script>
+
+<!--AngularJs script end-->
+
+</body>
+</html>

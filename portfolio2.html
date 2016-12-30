@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="portfolio">
+<head>
+	<meta charset="UTF-8"/>
+	<title>.: HUSNARA BANO :. </title>
+	<!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Phoenixcoded" />
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+	<!-- Required Framework-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- Google font & font-awasome-->
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Josefin+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Reset css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Responsive css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+
+</head>
+<body data-ng-controller="PortfolioController">
+<div id="main_loader">
+	<div id="loader">
+		<div></div>
+		<div></div>
+	</div>
+</div>
+<nav class="cd-side-navigation sidebar left" id="myDIV" data-banner>
+	<ul>
+		<li>
+			<a href="index.html">
+				<span class="home_icon"></span>
+				<span>Home</span>
+			</a>
+		</li>
+		<li>
+			<a href="resume.html">
+				<span class="resume_icon"></span>
+				<span>Resume</span>
+			</a>
+		</li>
+		<li>
+			<a href="portfolio.html" class="selected">
+				<span class="portfolio_icon"></span>
+				<span>Portfolio</span>
+			</a>
+		</li>
+		<li>
+			<a href="blog.html">
+				<span class="blog_icon"></span>
+				<span>Blog</span>
+			</a>
+		</li>
+
+		<li>
+			<a href="contact.html">
+				<span class="cont_icon"></span>
+				<span>Contact us</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+<div class="sidebar-btn toggle_icon_block" data-action="toggle" data-side="left" data-ng-click="ShowHide()">
+	<div class="toggle_icon {{className}}">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+<main class="cd-main">
+	<section class="cd-section portfolio2 visible">
+		<div class="container">
+			<div class="ptb-60">
+				<div class="row">
+					<div class="portfolio_title">
+						<div class="col-sm-12">
+							<h1 class="title">My <span class="bolder">Portfolio</span></h1>
+							<p class="mb40">
+								Assertively cultivate professional interfaces without synergistic etworks. Quickly erage existing customized ideas through client-based eliverables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize client-centric tals rather than focused web-readiness. Intrinsicly monetize reliable interfaces rather than multimedia based experiences. synergistic networks. Quickly rather than multimedia based Collaboratively synergize economically sound process improvements with functionalized e-commerce.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="port-tab">
+
+					<div class="portfolio_filters_group text-center" data-opt-kind="" ok-key="filter" >
+						<div class="portfolio_btn">
+							<button type='button' class='btn system_btn mobile_tabs active' ok-sel="*">All</button>
+							<button type='button' class='btn system_btn mobile_tabs' ok-sel=".web">Web Design</button>
+							<button type='button' class='btn system_btn mobile_tabs' ok-sel=".app">Application</button>
+							<button type='button' class='btn system_btn mobile_tabs' ok-sel=".photo">Photoshop</button>
+							<button type='button' class='btn system_btn mobile_tabs' ok-sel=".ill">Illustations</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+
+					<div id="isotopeContainer" data-isotope-container class="isotope">
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling photo  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout1.jpg" alt="Portfolio-1">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Photoshop</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling app  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout2.jpg" alt="Portfolio-2">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Application</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling ill  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout3.jpg" alt="Portfolio-3">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Illustations</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling web  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout4.jpg" alt="Portfolio-4">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Web Design</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling web  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout5.jpg" alt="Portfolio-5">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Web Design</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling web  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout6.jpg" alt="Portfolio-6">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Web Design</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling app  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout7.jpg" alt="Portfolio-7">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#"></a>Phoenix Coded</strong></h5>
+									<span>Application</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling ill ">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout8.jpg" alt="Portfolio-8">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Illustations</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling app  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout9.jpg" alt="Portfolio-7">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Application</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling app  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout10.jpg" alt="Portfolio-7">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Application</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling photo  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout11.jpg" alt="Portfolio-7">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Photoshop</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+							</div>
+						</div>
+						<div data-isotope-item class="col-sm-4 col-md-3 kindling photo  mb25">
+							<div class="port_img port_detail_img">
+								<img class="img img-responsive" src="assets/images/portfolio/portfolio_layout12.jpg" alt="Portfolio-7">
+								<div class="text-left port_detail_content">
+									<h5><strong><a href="portfolio.html#">Phoenix Coded</a></strong></h5>
+									<span>Photoshop</span>
+									<p class="mt5">
+										This is photoshop's version  of lorem Ipsum. Proin gravid This is photoshop's version  of
+									</p>
+									<a href="portfolio_details.html"><h6 class="text-right system_font_color">Read More ...</h6></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center system_font_color">
+						<a class="btn system_btn more_portfolio_btn" href="portfolio2.html">
+							Version - 2
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 text-left">
+						<h6> Design by <a href="" target="_blank">Husnara Bano</a> </h6>
+					</div>
+					<div class="col-sm-6 text-right">
+						<h6> Copyright &copy; <span id="copyright-year">2016</span>. All rights reserved </h6>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+</main>
+
+<!-- Warning Section Starts -->
+<!-- Older IE warning message -->
+<!--[if lt IE 9]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="assets/images/browser/chrome.png" alt="">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="assets/images/browser/firefox.png" alt="">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="assets/images/browser/opera.png" alt="">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="assets/images/browser/safari.png" alt="">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>-->
+<!-- [endif]-->
+<!-- Warning Section Ends -->
+
+<!-- Required js -->
+<script src="assets/js/jquery.2.2.3.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Mobile Sidebar menu js  -->
+<script src="assets/js/jquery.sidebar.min.js"></script>
+
+<!--AngularJs script start-->
+<script src="assets/angularJS/angular.min.js"></script>
+
+<!--Module script-->
+<script src="assets/modules/PortfolioModule.js"></script>
+
+<!--controller script-->
+<script src="assets/controllers/PortfolioController.js"></script>
+
+<!--angular-isotope.js-->
+<script src="assets/js/jquery.isotope.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/angularJS/angular-isotope.js"></script>
+
+<!--AngularJs script end-->
+</body>
+</html>

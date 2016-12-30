@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="resume">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>.: HUSNARA BANO :. </title>
+	<!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Phoenixcoded" />
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+	<!-- Required Framework-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- Google font & font-awasome-->
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Josefin+Sans:400,300,600,700' rel='stylesheet'
+		type='text/css'>
+
+	<!-- Timeline css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/timeline.css">
+
+	<!-- Animate css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+
+	<!--Angularjs animation-->
+	<link rel="stylesheet" type="text/css" href="assets/css/animation.css">
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Reset css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Responsive css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+	<!--slick-carousel css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-carousel/slick.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-carousel/slick-theme.css">
+
+</head>
+
+<body data-ng-controller="ResumeController">
+	<div id="main_loader">
+		<div id="loader">
+			<div></div>
+		</div>
+	</div>
+
+	<nav class="cd-side-navigation sidebar left" id="myDIV" data-banner>
+		<ul>
+			<li>
+				<a href="index.html">
+					<span class="home_icon"></span>
+					<span>Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="resume.html" class="selected">
+					<span class="resume_icon"></span>
+					<span>Resume</span>
+				</a>
+			</li>
+			<li>
+				<a href="portfolio.html">
+					<span class="portfolio_icon"></span>
+					<span>Portfolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="blog.html">
+					<span class="blog_icon"></span>
+					<span>Blog</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="contact.html">
+					<span class="cont_icon"></span>
+					<span>Contact us</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="sidebar-btn toggle_icon_block" data-action="toggle" data-side="left" data-ng-click="ShowHide()">
+		<div class="toggle_icon {{className}}">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<main class="cd-main">
+		<section class="cd-section resume visible">
+			<div class="container">
+				<div class="ptb-60">
+					<div class="row">
+						<div>
+							<div class="col-sm-12">
+								<h1 class="title">My <span class="bolder">Resume</span></h1>
+								<p class="mb40">
+									To achieve excellence in working as dynamic professional offering solutions to business using the best available where my
+									anatytical ability and analyzing quest are used maximum for growth of the organization and to grow with the organization.
+									Seeing a challenging position in well established company that offers professional growth and ample opportunity
+									to learn and enrich my competencies in my profession. To gain greater insight into the field of Human Resource Management
+									(HRM) by way of exposure to the real work atmosphere in a well established organization. Also, to seek a challenging
+									career in the field of human resources and to channelize my abilities towards individual, organizational and societal
+									benefits which will add value both me and my organization.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-offset-1 col-xs-12 col-sm-11" style="overflow: hidden">
+							<div class="mb40">
+								<h3>Professional Skill</h3>
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">Angular 2</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div data-uib-progressbar data-value="93" class="color-ng2"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">HTML 5</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div data-uib-progressbar data-value="70" class="color-html"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">CSS</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div data-uib-progressbar data-value="68" class="color-css"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">Java Script OOP </h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div data-uib-progressbar data-value="72" class="color-js"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">Type Script</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div data-uib-progressbar data-value="84" class="color-ts"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">Bootstrap 4</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div data-uib-progressbar data-value="65" class="color-bootstrap"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="mb40 skills-tab">
+								<h3>Additional Skill</h3>
+								<div class="row text-center mb60">
+									<div class="col-sm-4 col-xs-12 mob_chart " style="height: 153.2px;">
+										<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent || current }}%</div>
+										<div data-round-progress data-max="max" data-current="current" data-color="#0487cc" data-radius="70" data-bgcolor="#ffffff"
+											data-semi="isSemi" data-stroke="3" data-rounded="false" data-clockwise="true" data-responsive="false" data-duration="1000"
+											data-animation="easeInOutQuart" data-animation-delay="300" data-on-render="showPreciseCurrent">
+
+										</div>
+										<div class="text-center mob_counter">
+											<h5>Angular 2</h5>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12 mob_chart" style="height: 153.2px;">
+
+										<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent1 || current1 }}%</div>
+										<div data-round-progress data-max="max" data-current="current1" data-color="#0487cc" data-radius="70" data-bgcolor="#ffffff"
+											data-semi="isSemi" data-stroke="3" data-rounded="false" data-clockwise="true" data-responsive="false" data-duration="1000"
+											data-animation="easeInOutQuart" data-animation-delay="600" data-on-render="showPreciseCurrent1">
+
+										</div>
+										<div class="text-center mob_counter">
+											<h5>Team Player</h5>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12 mob_chart" style="height: 153.2px;">
+
+										<div class="Circle_progress ng-cloak" data-ng-style="getStyle()">{{ preciseCurrent2 || current2 }}%</div>
+										<div data-round-progress data-max="max" data-current="current2" data-color="#0487cc" data-radius="70" data-bgcolor="#ffffff"
+											data-semi="isSemi" data-stroke="3" data-rounded="false" data-clockwise="true" data-responsive="false" data-duration="1000"
+											data-animation="easeInOutQuart" data-animation-delay="900" data-on-render="showPreciseCurrent2">
+
+										</div>
+										<div class="text-center mob_counter">
+											<h5>Quick Learner</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mb40">
+								<h3>Experince</h3>
+								<div class="timeline timeline-left gray-blue">
+									<div class="timeline-block">
+										<i class="fa fa-suitcase"></i>
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>WEB AGENCY</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic etworks. Quickly erage existing customized ideas through
+												client-based eliverables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize
+												client-centric tals rather than focused
+											</p>
+											<div class="timeline-date">2011-2012
+												<h4 class="system_font_color" title="Hello Developer">Web Developer</h4>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-block">
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>GOOGLE INC</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic etworks. Quickly erage existing customized ideas through
+												client-based eliverables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize
+												client-centric tals rather than focused
+											</p>
+											<div class="timeline-date">2013-2014
+												<h4 class="system_font_color" title="Hello Developer">Web Developer</h4>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-block">
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>WEB AGENCY</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic etworks. Quickly erage existing customized ideas through
+												client-based eliverables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize
+												client-centric tals rather than focused
+											</p>
+											<div class="timeline-date">2015-2016
+												<h4 class="system_font_color" title="Hello Developer">Web Developer</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+							</div>
+							<div class="mb40">
+								<h3>Education</h3>
+								<div class="timeline timeline-left gray-blue">
+									<div class="timeline-block">
+										<i class="fa fa-graduation-cap"></i>
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>BERHAMPUR UNIVERSITY</h4>
+											<p>
+												I have completed my MBA from Berhampur University in 2015, with an aggregate percentage of 76 with Distinction . My specializations
+												are Finance and HR. Seminar presented on topic “Financial Market” and Project on “Working Capital management”
+												at SouthCo, Berhampur .
+
+											</p>
+											<div class="timeline-date">2013-2015
+												<h4 class="system_font_color">MBA</h4>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-block">
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>NEXUS INTEGRATED SCHOOL OF MANAGEMENT</h4>
+											<p>
+												Bachelor of Business Administration (B.B.A.), in Financial Management, with an aggregate percentage of 77 with Distinction.
+												Seminar presented on topic “Enterprise Resource Plan ” ( ERP ) and Project on “Ratio Analysis” at SouthCo, Berhampur
+												.
+
+											</p>
+											<div class="timeline-date">2010-2013
+												<h4 class="system_font_color">BBA</h4>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-block">
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>MAHAMAYEE MAHILA MAHAVIDYALAYA</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic etworks. Quickly erage existing customized ideas through
+												client-based eliverables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize
+												client-centric tals rather than focused
+											</p>
+											<div class="timeline-date">2008-2010
+												<h4 class="system_font_color">INTERMEDIATE</h4>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-block">
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>G.S.T.S FOR WOMEN</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic etworks. Quickly erage existing customized ideas through
+												client-based eliverables. Compellingly unleash fully tested outsourcing with prospective tunities. Uniquely maximize
+												client-centric tals rather than focused
+											</p>
+											<div class="timeline-date">2008
+												<h4 class="system_font_color">SCHOOLING</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mb40">
+								<h3>My Best Quotes</h3>
+								<div data-slick class="slider single-item" data-slides-to-show=1 data-slides-to-scroll=1 data-autoplay=true data-draggable=true
+									data-fade=true data-arrows=false data-dots=true>
+									<div>
+										<blockquote>
+											<p>" With The Right People... Anything is Possible... "</p>
+										</blockquote>
+									</div>
+									<div>
+										<blockquote>
+											<p>" If Today Were The Last Day Of Your Life, Would You Want To Do What You Are About To Do Today?"</p>
+										</blockquote>
+									</div>
+									<div>
+										<blockquote>
+											<p>" Patience, Persistence And Perspiration Make An Unbeatable Combination For Success... "</p>
+										</blockquote>
+									</div>
+									<div>
+										<blockquote>
+											<p>" Life Is A Helluva Lot MoreFun If You Say Yes Rather Than No... "</p>
+										</blockquote>
+									</div>
+									<div>
+										<blockquote>
+											<p>" Every Risk Is Worth Taking As Long As It's For A Good Cause, And Contributes To A Good Life... "</p>
+										</blockquote>
+									</div>
+									<div>
+										<blockquote>
+											<p>" I Never Dreamed About Success. I Worked For It, If Opportunity Doesn't Knock, Build A Door... "</p>
+										</blockquote>
+									</div>
+									<div>
+										<blockquote>
+											<p>" Never Give Up Because F.A.I.L Means "First Attempt In Learning" - E.N.D Means "Effort Never Dies"
+												- N.O Means "Next Opportunity" So Let's Be Positive... "</p>
+										</blockquote>
+									</div>
+									<div>
+										<blockquote>
+											<p>" Success Isn't Overnight, It Takes Years, Success Is Your Sum Of Small Efforts, Repeated Day In - Day Out..."</p>
+										</blockquote>
+									</div>
+									<div>
+										<blockquote>
+											<p>" First Learn Then Remove "L". "</p>
+										</blockquote>
+									</div>
+									<div>
+										<blockquote>
+											<p>" 3 Steps To Move On. Ctrl + Alt + Delete, Control Yourself, Look For An Alternate Solution And Delete The Situation
+												That Hurts You..."</p>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<section class="testimonial_section mb40">
+				<div class="container text-center">
+					<!-- TESTIMONIAL CONTAINER  -->
+					<div data-slick id="testimonial-slider" class="slider single-item" data-slides-to-show=1 data-slides-to-scroll=1 data-arrows=false
+						data-autoplay=false draggable=true data-adaptive-height=true data-fade=true data-as-nav-for="#testimonial-carousel">
+
+						<div>
+							<p class="col-sm-10 col-sm-offset-1">"Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform
+								web services "</p>
+
+						</div>
+
+						<div>
+							<p class="col-sm-10 col-sm-offset-1">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s"</p>
+						</div>
+
+						<div>
+							<p class="col-sm-10 col-sm-offset-1">" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
+								form, by injected humour "</p>
+
+						</div>
+
+						<div>
+							<p class="col-sm-10 col-sm-offset-1">" It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+								its layout "</p>
+
+
+						</div>
+
+						<div>
+							<p class="col-sm-10 col-sm-offset-1">"Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas
+								effective web-readiness."</p>
+
+						</div>
+						<div>
+							<p class="col-sm-10 col-sm-offset-1">"Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform
+								web services "</p>
+
+						</div>
+						<div>
+							<p class="col-sm-10 col-sm-offset-1">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s"</p>
+
+						</div>
+						<div>
+							<p class="col-sm-10 col-sm-offset-1">" It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+								its layout "</p>
+
+						</div>
+					</div>
+
+					<span class="testimonial-divider testimonial-divider-color"></span>
+
+					<!-- TESTIMONIALS THUMB CONTAINER  -->
+					<div data-slick id="testimonial-carousel" class="testimonial-thumbs slider single-item" data-slides-to-show=5 data-slides-to-scroll=1
+						data-arrows=false data-as-nav-for="#testimonial-slider" data-dots=false data-center-mode=true data-autoplay=true data-focus-on-select=true
+						data-responsive=breakpoints>
+						<div>
+							<img src="assets/images/resume_slider1.png" alt="" />
+							<div class="testimonial_user">
+								<h4>John Doe</h4>
+								<h5>CEO, Envato</h5>
+							</div>
+						</div>
+						<div>
+							<img src="assets/images/resume_slider2.png" alt="" />
+							<div class="testimonial_user">
+								<h4>Alan Sharp</h4>
+								<h5>CEO, Themeforest</h5>
+							</div>
+						</div>
+						<div>
+							<img src="assets/images/resume_slider3.png" alt="" />
+							<div class="testimonial_user">
+								<h4>John Doe</h4>
+								<h5>CEO, Envato</h5>
+							</div>
+						</div>
+						<div>
+							<img src="assets/images/resume_slider4.png" alt="" />
+							<div class="testimonial_user">
+								<h4>Hannah Brown</h4>
+								<h5>Founder, Tuts+</h5>
+							</div>
+						</div>
+						<div>
+							<img src="assets/images/resume_slider5.png" alt="" />
+							<div class="testimonial_user">
+								<h4>Hannah Brown</h4>
+								<h5>Founder, Tuts+</h5>
+							</div>
+						</div>
+						<div>
+							<img src="assets/images/resume_slider2.png" alt="" />
+							<div class="testimonial_user">
+								<h4>John Doe</h4>
+								<h5>CEO, Envato</h5>
+							</div>
+						</div>
+						<div>
+							<img src="assets/images/resume_slider3.png" alt="" />
+							<div class="testimonial_user">
+								<h4>Hannah Brown</h4>
+								<h5>Founder, Tuts+</h5>
+							</div>
+						</div>
+						<div>
+							<img src="assets/images/resume_slider4.png" alt="" />
+							<div class="testimonial_user">
+								<h4>John Doe</h4>
+								<h5>CEO, Envato</h5>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			</section>
+			<div class="text-center mb40">
+				<button class="btn system_btn download_icon
+					">
+				<span></span>
+				Download CV
+			</button>
+				<button class="btn system_btn ml20 print_icon">
+				<span></span>
+				Print CV
+			</button>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-left">
+								<h6> Design by <a href="" target="_blank">Husnara Bano</a> </h6>
+						</div>
+						<div class="col-sm-6 text-right">
+							<h6> Copyright &copy; <span id="copyright-year">2016</span>. All rights reserved </h6>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</main>
+	<!-- Warning Section Starts -->
+	<!-- Older IE warning message -->
+	<!--[if lt IE 9]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="assets/images/browser/chrome.png" alt="">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="assets/images/browser/firefox.png" alt="">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="assets/images/browser/opera.png" alt="">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="assets/images/browser/safari.png" alt="">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>  -->
+	<!--[endif]-->
+	<!-- Warning Section Ends -->
+
+	<!-- Required js -->
+	<script src="assets/js/jquery.2.2.3.min.js"></script>
+	<script src="assets/js/jquery.easing.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Mobile Sidebar menu js  -->
+	<script src="assets/js/jquery.sidebar.min.js"></script>
+
+	<!--AngularJs script start-->
+
+	<script src="assets/angularJS/angular.min.js"></script>
+
+	<!--Module script-->
+	<script src="assets/modules/ResumeModule.js"></script>
+
+	<!--controller script-->
+	<script src="assets/controllers/ResumeController.js"></script>
+
+	<!-- ui-bootstrap-tpls-2.0.2.js -->
+	<script type="text/javascript" src="assets/angularJS/ui-bootstrap-tpls-2.0.2.js"></script>
+
+	<!--roundProgress script-->
+	<script src="assets/angularJS/roundProgressScroll.js"></script>
+	<!--Slick js-->
+	<script src="assets/angularJS/slick-carousel/slick.js"></script>
+	<script src="assets/angularJS/slick.js"></script>
+
+	<!--AngularJs script end-->
+
+
+</body>
+
+</html>
